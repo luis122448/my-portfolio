@@ -1,3 +1,7 @@
+@import 'swiper/css';
+@import 'swiper/css/navigation';
+@import 'swiper/css/pagination';
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -63,7 +67,7 @@ body {
 }
 
 .basic-title {
-  @apply flex items-center sm:mb-1 text-base sm:text-lg font-semibold text-gray-900 dark:text-white
+  @apply text-lg flex items-center sm:mb-1 sm:text-lg font-semibold text-gray-900 dark:text-white
 }
 
 .project-title {
@@ -75,7 +79,7 @@ body {
 }
 
 .basic-sub-title {
-  @apply block mb-2 text-sm font-bold leading-none text-gray-900 dark:text-gray-500
+  @apply block mb-2 text-base font-bold leading-none text-gray-900 dark:text-gray-400
 }
 
 .basic-icon-title {
@@ -135,7 +139,7 @@ body {
 }
 
 .basic-title-list {
-  @apply flex items-center mb-1 text-sm font-semibold text-gray-900 dark:text-white whitespace-nowrap
+  @apply flex items-center mb-1 text-base font-semibold text-gray-900 dark:text-white whitespace-nowrap
 }
 
 .basic-sub-title-list {

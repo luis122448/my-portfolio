@@ -1,16 +1,16 @@
 <section class="space-y-4 sm:space-y-0">
-  <h3 class="section-title">Proyectos y Experiencia Académica</h3>
+  <h3 class="section-title">Mis Proyectos</h3>
   <section class="bg-white dark:bg-gray-900">
     <article class="grid grid-cols-2 gap-x-4 h-28 sm:h-12 sm:mx-6 py-2 sm:py-0">
       <div class="col-span-1">
         <h2 class="project-title">Sistema de Facturación Online<br><span class="text-cyan-600">Smart Shell</span></h2>
       </div>
       <div class="col-span-1 sm:p-4 flex justify-end">
-        <!-- <app-stack-tech [tags]="['postgresql','redis','mongodb','springio','angular','docker']"></app-stack-tech> -->
+        <app-stack-tech [stackTechs]="['postgresql','redis','mongodb','springio','angular','docker']"></app-stack-tech>
       </div>
     </article>
     <article class="project-container">
-      <!-- <app-carousel [urlImages]="urlImagesSmartShell"></app-carousel> -->
+      <app-carousel [urlImages]="urlImagesSmartShell"></app-carousel>
       <div class="mt-4 md:mt-0">
         <ul class="basic-text list-none md:list-disc list-outside">
           <li>Emisión, busqueda e impresión de comprobantes electrónicos</li>
@@ -38,11 +38,11 @@
         <h2 class="project-title">Sistema de Seguimiento y Capacitacion del Personal<br><span class="text-cyan-600">Pro Learn Tracker</span></h2>
       </div>
       <div class="col-span-1 p-4 flex justify-end">
-        <!-- <app-stack-tech [tags]="['mysql','springio','angular','docker']"></app-stack-tech> -->
+        <app-stack-tech [stackTechs]="['mysql','springio','angular','docker']"></app-stack-tech>
       </div>
     </article>
     <article class="project-container">
-      <!-- <app-carousel [urlImages]="urlImagesProLearnTracker"></app-carousel> -->
+      <app-carousel [urlImages]="urlImagesProLearnTracker"></app-carousel>
       <div class="mt-4 md:mt-0">
         <ul class="basic-text list-none md:list-disc list-outside">
           <li>Implementacion de modulos, cursos y clases personalizable por usuario</li>
