@@ -1,0 +1,44 @@
+<section class="flex flex-col justify-center items-center space-y-4 sm:grid sm:grid-cols-4 sm:gap-x-6 mr-3">
+  <article class="sm:col-span-1 space-y-2 mx-auto">
+    <img src="/assets/images/foto.webp" alt="luis-antonio-calvo-quispe" class="my-auto px-2 py-4 w-48 h-48 rounded-full" height="48" width="48" />
+    <div class="mx-auto pt-2 text-slate-800 dark:text-gray-200 flex justify-center space-x-4">
+      <a href="https://www.linkedin.com/in/luis-antonio-calvo-quispe-57a33b229/" target="_blank">
+        <i class="fa-brands fa-linkedin fa-2xl"></i>
+      </a>
+      <a href="https://github.com/luis122448" target="_blank">
+        <i class="fa-brands fa-square-github fa-2xl"></i>
+      </a>
+      <a href="https://t.me/luis122448" target="_blank">
+        <i class="fa-brands fa-telegram fa-2xl"></i>
+      </a>
+    </div>
+  </article>
+  <article class="sm:col-span-3 flex-col justify-center space-y-2 mx-2 sm:mx-0">
+    <h1 class="text-xl font-bold text-slate-800 dark:text-gray-400">
+      Hola, soy <span class="text-cyan-600">Luis Antonio Calvo Quispe</span>
+    </h1>
+    <h4 class="basic-title">
+      Ingeniero de Datos y DBA | 3+ Años de Experiencia
+    </h4>
+    <div class="basic-text">
+      Diseño y construcción de <span class="font-bold">Pipelines</span> de ingesta y transformación de datos con <span class="resalt-text">Spark, Hive y Scala</span><br>
+      Expreciencia en el desarrollo de <span class="font-bold">Aplicaciones Web de Migracion/ETL</span>, para limpieza, transformación, migración de datos con <span class="resalt-text">Python (FastAPI) y Angular</span>.<br />
+      <span class="font-bold">Administración de Base de Datos (DBA)</span> transaccionales en <span class="resalt-text">Oracle y PostgreSQL</span> asegurando una alta disponibilidad <span class="resalt-text">(Oracle RAC, Kubernetes)</span>, rendimiento <span class="resalt-text">(SQL Tuning)</span> el respaldo de la informacion <span class="resalt-text">(Oracle DataGuard, Streaming Replication)</span>.<br />
+      Despliegue aplicaciones en <span class="resalt-text">AWS (EC2, S3), Azure, Oracle Cloud</span>. Automatización de <span class="font-bold">CI/CD</span> con <span class="resalt-text">Git, Docker, Jenkins</span> bajo metodologías ágiles <span class="resalt-text">Scrum</span>.
+    </div>
+    <div class="flex flex-col space-y-4 items-start sm:grid sm:grid-cols-3">
+      <div class="sm:col-span-2 flex space-x-3">
+        <p class="basic-title-list">Stack :</p>
+        <app-stack-tech></app-stack-tech>
+      </div>
+      <div class="sm:col-span-1 flex justify-center">
+        <button type="button" class="basic-button-blue" (click)="downloadCV()">
+          <div class="basic-icon-container">
+            <i class="fa-solid fa-download fa-lg basic-icon"></i>
+          </div>
+          <p class="m-auto font-semibold">Descagar CV</p>
+        </button>
+      </div>
+    </div>
+  </article>
+</section>
