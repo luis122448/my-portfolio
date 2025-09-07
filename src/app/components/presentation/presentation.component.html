@@ -14,22 +14,41 @@
     </div>
   </article>
   <article class="sm:col-span-3 flex-col justify-center space-y-2 mx-2 sm:mx-0">
-    <h1 class="text-xl font-bold text-slate-800 dark:text-gray-400">
-      Hola, soy <span class="text-cyan-600">Luis Antonio Calvo Quispe</span>
+    <h1 class="text-xl font-bold text-slate-800 dark:text-gray-300">
+      Hola, soy <span class="text-cyan-600">Luis Antonio Calvo Quispe</span>. Transformo datos en soluciones de negocio.
     </h1>
     <h4 class="basic-title">
-      Ingeniero de Datos y DBA | 3+ Años de Experiencia
+      Ingeniero de Datos | DBA | 4+ Años de Experiencia
     </h4>
     <div class="basic-text">
-      Diseño y construcción de <span class="font-bold">Pipelines</span> de ingesta y transformación de datos con <span class="resalt-text">Spark, Hive y Scala</span><br>
-      Expreciencia en el desarrollo de <span class="font-bold">Aplicaciones Web de Migracion/ETL</span>, para limpieza, transformación, migración de datos con <span class="resalt-text">Python (FastAPI) y Angular</span>.<br />
-      <span class="font-bold">Administración de Base de Datos (DBA)</span> transaccionales en <span class="resalt-text">Oracle y PostgreSQL</span> asegurando una alta disponibilidad <span class="resalt-text">(Oracle RAC, Kubernetes)</span>, rendimiento <span class="resalt-text">(SQL Tuning)</span> el respaldo de la informacion <span class="resalt-text">(Oracle DataGuard, Streaming Replication)</span>.<br />
-      Despliegue aplicaciones en <span class="resalt-text">AWS (EC2, S3), Azure, Oracle Cloud</span>. Automatización de <span class="font-bold">CI/CD</span> con <span class="resalt-text">Git, Docker, Jenkins</span> bajo metodologías ágiles <span class="resalt-text">Scrum</span>.
+      Ingeniero Industrial con 4 años de experiencia como <span class="resalt-text">Administrador de Bases de Datos (DBA)</span> e <span class="resalt-text">Ingeniero de Datos</span>. Especializado en la administración, migración e integración de motores de bases de datos transaccionales (<span class="resalt-text">Oracle, PostgreSQL, Interbase, Informix</span>).<br>
+      Experiencia en el diseño de <span class="resalt-text">pipelines ETL</span> y procesamiento distribuido con <span class="resalt-text">Apache Spark, Scala y PySpark</span>.<br>
+      Competencias en entornos <span class="resalt-text">DevOps (Docker, Kubernetes, Git, Jenkins)</span>, despliegue en la nube (<span class="resalt-text">Oracle Cloud, AWS</span>) y desarrollo de servicios REST con <span class="resalt-text">Java y Python</span>.<br>
+      Reconocido por liderar <span class="resalt-text">migraciones críticas</span>, <span class="resalt-text">automatizar procesos clave</span> y <span class="resalt-text">optimizar bases de datos</span>, logrando mayor eficiencia, reducción de costos y continuidad operativa.<br><br>
+      <div class="flex items-center gap-4">
+        <span class="font-bold">Habilidades :</span>
+        <div class="flex flex-wrap gap-2">
+          <span class="bg-cyan-100 text-cyan-800 text-sm font-medium px-2.5 py-0.5 rounded dark:bg-cyan-900 dark:text-cyan-300">Mejora de procesos</span>
+          <span class="bg-cyan-100 text-cyan-800 text-sm font-medium px-2.5 py-0.5 rounded dark:bg-cyan-900 dark:text-cyan-300">Liderazgo</span>
+          <span class="bg-cyan-100 text-cyan-800 text-sm font-medium px-2.5 py-0.5 rounded dark:bg-cyan-900 dark:text-cyan-300">Aprendizaje continuo</span>
+        </div>
+      </div>
     </div>
     <div class="flex flex-col space-y-4 items-start sm:grid sm:grid-cols-3">
       <div class="sm:col-span-2 flex space-x-3">
         <p class="basic-title-list">Stack :</p>
-        <app-stack-tech></app-stack-tech>
+        <app-stack-tech [stackTechs]="[
+            'oracle',
+            'postgresql',
+            'python',
+            'spark',
+            'java',
+            'scala',
+            'kubernetes',
+            'docker',
+            'git',
+            'linux'
+          ]"></app-stack-tech>
       </div>
       <div class="sm:col-span-1 flex justify-center">
         <button type="button" class="basic-button-blue" (click)="downloadCV()">

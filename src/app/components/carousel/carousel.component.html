@@ -1,7 +1,11 @@
 <swiper-container #swiperContainer init="false">
   @for (image of urlImages; track image) {
-    <swiper-slide>
-      <img [src]="image" alt="carousel image" class="w-full h-full object-cover rounded-lg">
-    </swiper-slide>
+  <swiper-slide>
+    <img
+      [src]="image"
+      alt="carousel image"
+      class="w-full h-full object-contain rounded-lg"
+    />
+  </swiper-slide>
   }
 </swiper-container>

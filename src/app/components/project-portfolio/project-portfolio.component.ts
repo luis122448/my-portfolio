@@ -18,9 +18,16 @@ export class ProjectPortfolioComponent {
     '/assets/project/smart-shell/5.jpg'
   ];
 
-
   urlImagesProLearnTracker = [
     '/assets/project/pro-learn-tracker/6.jpg',
     '/assets/project/pro-learn-tracker/7.jpg'
+  ];
+
+  urlSqlReportDashboard = [
+    '/assets/project/sql-report-dashboard/8.jpg',
+  ];
+
+  urlMigrateToOracle = [
+    '/assets/project/migrate-to-oracle/9.jpg',
   ];
 }
