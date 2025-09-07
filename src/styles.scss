@@ -27,7 +27,7 @@ body {
 }
 
 .main-container {
-  @apply px-2 sm:px-4 bg-slate-50 dark:bg-slate-900 dark:text-gray-400 max-w-4xl mx-auto rounded-lg w-[900px] lg:w-[1000px] xl:min-w-[1200px]
+  @apply px-2 sm:px-4 bg-white dark:bg-slate-900 dark:text-gray-400 max-w-4xl mx-auto rounded-lg w-[900px] lg:w-[1000px] xl:min-w-[1200px]
 }
 
 .border-default {
@@ -91,7 +91,7 @@ body {
 }
 
 .basic-text-sm {
-  @apply mb-4 text-sm font-semibold dark:font-normal text-gray-800 dark:text-gray-300
+  @apply mb-4 text-sm font-normal dark:font-normal text-gray-800 dark:text-gray-300
 }
 
 .basic-text-xs {
@@ -107,35 +107,35 @@ body {
 }
 
 .basic-tag-blue {
-  @apply bg-blue-100 text-blue-800 text-sm font-medium px-2.5 py-0.5 rounded dark:bg-blue-900 dark:text-blue-300
+  @apply bg-blue-100 text-blue-800 text-sm font-semibold dark:font-medium px-2.5 py-0.5 rounded dark:bg-blue-900 dark:text-blue-300
 }
 
 .basic-tag-cyan {
-  @apply bg-cyan-100 text-cyan-800 text-sm font-medium px-2.5 py-0.5 rounded dark:bg-cyan-900 dark:text-cyan-300
+  @apply bg-cyan-100 text-cyan-800 text-sm font-semibold dark:font-medium px-2.5 py-0.5 rounded dark:bg-cyan-900 dark:text-cyan-300
 }
 
 .basic-tag-green {
-  @apply bg-green-100 text-green-800 text-sm font-medium px-2.5 py-0.5 rounded dark:bg-green-900 dark:text-green-300
+  @apply bg-green-100 text-green-800 text-sm font-semibold dark:font-medium px-2.5 py-0.5 rounded dark:bg-green-900 dark:text-green-300
 }
 
 .basic-tag-yellow {
-  @apply bg-yellow-100 text-yellow-800 text-sm font-medium px-2.5 py-0.5 rounded dark:bg-yellow-900 dark:text-yellow-300
+  @apply bg-yellow-100 text-yellow-800 text-sm font-semibold dark:font-medium px-2.5 py-0.5 rounded dark:bg-yellow-900 dark:text-yellow-300
 }
 
 .basic-tag-red {
-  @apply bg-red-100 text-red-800 text-sm font-medium px-2.5 py-0.5 rounded dark:bg-red-900 dark:text-red-300
+  @apply bg-red-100 text-red-800 text-sm font-semibold dark:font-medium px-2.5 py-0.5 rounded dark:bg-red-900 dark:text-red-300
 }
 
 .basic-tag-gray {
-  @apply bg-gray-100 text-gray-800 text-sm font-medium px-2.5 py-0.5 rounded dark:bg-gray-900 dark:text-gray-300
+  @apply bg-gray-100 text-gray-800 text-sm font-semibold dark:font-medium px-2.5 py-0.5 rounded dark:bg-gray-900 dark:text-gray-300
 }
 
 .basic-tag-purple {
-  @apply bg-purple-100 text-purple-800 text-sm font-medium px-2.5 py-0.5 rounded dark:bg-purple-900 dark:text-purple-300
+  @apply bg-purple-100 text-purple-800 text-sm font-semibold dark:font-medium px-2.5 py-0.5 rounded dark:bg-purple-900 dark:text-purple-300
 }
 
 .basic-tag-indigo {
-  @apply bg-indigo-100 text-indigo-800 text-sm font-medium px-2.5 py-0.5 rounded dark:bg-indigo-900 dark:text-indigo-300
+  @apply bg-indigo-100 text-indigo-800 text-sm font-semibold dark:font-medium px-2.5 py-0.5 rounded dark:bg-indigo-900 dark:text-indigo-300
 }
 
 .basic-circle-list {
