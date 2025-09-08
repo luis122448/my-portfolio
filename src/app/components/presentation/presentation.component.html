@@ -1,63 +1,61 @@
-<section class="flex flex-col justify-center items-center space-y-4 sm:grid sm:grid-cols-4 sm:gap-x-6 mr-3">
-  <article class="sm:col-span-1 space-y-2 mx-auto">
-    <img src="/assets/images/foto.webp" alt="luis-antonio-calvo-quispe" class="my-auto px-2 py-4 w-48 h-48 rounded-full" height="48" width="48" />
-    <div class="mx-auto pt-2 text-slate-800 dark:text-gray-200 flex justify-center space-x-4">
-      <a href="https://www.linkedin.com/in/luis-antonio-calvo-quispe-57a33b229/" target="_blank" aria-label="Visita mi perfil de LinkedIn">
+<section class="p-4 space-y-6 sm:space-y-0 sm:grid sm:grid-cols-4 sm:gap-x-8 sm:p-2">
+  <!-- Columna de la Imagen -->
+  <article class="sm:col-span-1 flex flex-col items-center sm:space-y-12 space-y-4 my-auto">
+    <img src="/assets/images/foto.webp" alt="luis-antonio-calvo-quispe" class="w-40 h-40 rounded-full shadow-lg" loading="lazy" />
+    <div class="flex justify-center space-x-6 text-slate-800 dark:text-gray-200">
+      <a href="https://www.linkedin.com/in/luis-antonio-calvo-quispe-57a33b229/" target="_blank" aria-label="Visita mi perfil de LinkedIn" class="hover:text-cyan-500">
         <i class="fa-brands fa-linkedin fa-2xl"></i>
       </a>
-      <a href="https://github.com/luis122448" target="_blank" aria-label="Visita mi perfil de GitHub">
+      <a href="https://github.com/luis122448" target="_blank" aria-label="Visita mi perfil de GitHub" class="hover:text-cyan-500">
         <i class="fa-brands fa-square-github fa-2xl"></i>
       </a>
-      <a href="https://t.me/luis122448" target="_blank" aria-label="Contáctame por Telegram">
+      <a href="https://t.me/luis122448" target="_blank" aria-label="Contáctame por Telegram" class="hover:text-cyan-500">
         <i class="fa-brands fa-telegram fa-2xl"></i>
       </a>
     </div>
   </article>
-  <article class="sm:col-span-3 flex-col justify-center space-y-2 mx-2 sm:mx-0">
-    <h1 class="text-xl font-bold text-slate-800 dark:text-gray-300">
-      Hola, soy <span class="text-cyan-600">Luis Antonio Calvo Quispe</span>. Transformo datos en soluciones de negocio.
+
+  <!-- Columna de Texto -->
+  <article class="sm:col-span-3 flex flex-col justify-center space-y-4">
+    <h1 class="text-2xl sm:text-3xl font-bold text-slate-800 dark:text-gray-200">
+      Hola, soy <span class="text-cyan-600">Luis Antonio Calvo Quispe</span>
     </h1>
-    <h2 class="basic-title">
-      Ingeniero de Datos | DBA | 4+ Años de Experiencia
+    <h2 class="text-lg sm:text-xl font-semibold text-gray-700 dark:text-gray-400">
+      Ingeniero de Datos & DBA con +4 Años de Experiencia
     </h2>
-    <div class="basic-text">
-      Ingeniero Industrial con 4 años de experiencia como <span class="resalt-text">Administrador de Bases de Datos (DBA)</span> e <span class="resalt-text">Ingeniero de Datos</span>. Especializado en la administración, migración e integración de motores de bases de datos transaccionales (<span class="resalt-text">Oracle, PostgreSQL, Interbase, Informix</span>).<br>
-      Experiencia en el diseño de <span class="resalt-text">pipelines ETL</span> y procesamiento distribuido con <span class="resalt-text">Apache Spark, Scala y PySpark</span>.<br>
-      Competencias en entornos <span class="resalt-text">DevOps (Docker, Kubernetes, Git, Jenkins)</span>, despliegue en la nube (<span class="resalt-text">Oracle Cloud, AWS</span>) y desarrollo de servicios REST con <span class="resalt-text">Java y Python</span>.<br>
-      Reconocido por liderar <span class="resalt-text">migraciones críticas</span>, <span class="resalt-text">automatizar procesos clave</span> y <span class="resalt-text">optimizar bases de datos</span>, logrando mayor eficiencia, reducción de costos y continuidad operativa.<br><br>
-      <div class="flex items-center gap-4">
-        <span class="font-bold">Habilidades :</span>
-        <div class="flex flex-wrap gap-2">
-          <span class="basic-tag-cyan">Mejora de procesos</span>
-          <span class="basic-tag-cyan">Liderazgo</span>
-          <span class="basic-tag-cyan">Aprendizaje continuo</span>
-        </div>
-      </div>
+    <div class="text-base text-gray-800 dark:text-gray-300 space-y-3">
+      <p>
+        Ingeniero Industrial con experiencia como <span class="resalt-text">Administrador de Bases de Datos (DBA)</span> e <span class="resalt-text">Ingeniero de Datos</span>. Especializado en la administración, migración e integración de BBDD transaccionales (<span class="resalt-text">Oracle, PostgreSQL, etc.</span>) y en el diseño de <span class="resalt-text">pipelines ETL</span> con <span class="resalt-text">Apache Spark y Python</span>.
+      </p>
+      <p>
+        Competencias en <span class="resalt-text">DevOps (Docker, Kubernetes)</span>, despliegue en <span class="resalt-text">Cloud (AWS)</span> y desarrollo de servicios REST. Reconocido por liderar migraciones críticas y optimizar bases de datos para mejorar la eficiencia y continuidad del negocio.
+      </p>
     </div>
-    <div class="flex flex-col space-y-4 items-start sm:grid sm:grid-cols-3">
-      <div class="sm:col-span-2 flex space-x-3">
-        <p class="basic-title-list">Stack :</p>
-        <app-stack-tech [stackTechs]="[
-            'oracle',
-            'postgresql',
-            'python',
-            'spark',
-            'java',
-            'scala',
-            'kubernetes',
-            'docker',
-            'git',
-            'linux'
-          ]"></app-stack-tech>
-      </div>
-      <div class="sm:col-span-1 flex justify-center">
-        <button type="button" class="basic-button-blue" (click)="downloadCV()">
+
+    <!-- Habilidades y Stack -->
+    <div class="space-y-4 pt-2">
+        <div class="flex flex-wrap items-center gap-x-4 gap-y-2">
+            <span class="font-bold text-gray-800 dark:text-gray-200">Habilidades:</span>
+            <div class="flex flex-wrap gap-2">
+              <span class="basic-tag-cyan">Mejora de procesos</span>
+              <span class="basic-tag-cyan">Liderazgo</span>
+              <span class="basic-tag-cyan">Aprendizaje continuo</span>
+            </div>
+        </div>
+        <div class="flex flex-wrap items-center gap-x-4 gap-y-2">
+            <p class="font-bold text-gray-800 dark:text-gray-200">Stack:</p>
+            <app-stack-tech [stackTechs]="['oracle', 'postgresql', 'python', 'spark', 'java', 'scala', 'kubernetes', 'docker', 'git', 'linux']"></app-stack-tech>
+        </div>
+    </div>
+
+    <!-- Botón de CV -->
+    <div class="pt-4">
+        <button type="button" class="basic-button-blue w-full sm:w-auto" (click)="downloadCV()">
           <div class="basic-icon-container">
             <i class="fa-solid fa-download fa-lg basic-icon"></i>
           </div>
           <p class="m-auto font-semibold">Descagar CV</p>
         </button>
-      </div>
     </div>
   </article>
 </section>
