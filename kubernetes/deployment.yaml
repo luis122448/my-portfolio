@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: frontend-deployment
+  namespace: my-portfolio
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: my-portfolio
+  template:
+    metadata:
+      labels:
+        app: my-portfolio
+    spec:
+      containers:
+        - name: my-portfolio-container
+          image: lcalvo/my-portfolio:v1.0.0
+          ports:
+            - containerPort: 4000

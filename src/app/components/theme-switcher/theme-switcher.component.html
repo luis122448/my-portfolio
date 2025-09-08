@@ -1,49 +1,21 @@
-<section class="flex h-full w-full rounded-full">
-  <article class="relative">
-    <input
-      type="checkbox"
-      name="themeSwitcher"
-      id="themeSwitcher"
-      class="hidden"
-      [checked]="isDark"
-      (click)="onChange(true)"
-    />
-    <label for="themeSwitcher" class="relative cursor-pointer">
-      <div class="flex h-8 w-16 items-center rounded-full bg-gray-300">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          fill="none"
-          viewBox="0 0 24 24"
-          stroke-width="1.5"
-          stroke="currentColor"
-          [class.light]="!isDark"
-          class="absolute left-2 z-10 h-4 w-4"
-        >
-          <path
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            d="M12 3v2.25m6.364.386-1.591 1.591M21 12h-2.25m-.386 6.364-1.591-1.591M12 18.75V21m-4.773-4.227-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0Z"
-          />
-        </svg>
-        <div
-          class="switchball absolute left-3 h-8 w-8 rounded-full bg-white shadow"
-        ></div>
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          fill="none"
-          viewBox="0 0 24 24"
-          stroke-width="1.5"
-          stroke="currentColor"
-          [class.dark]="isDark"
-          class="absolute right-2 z-10 h-4 w-4"
-        >
-          <path
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            d="M21.752 15.002A9.72 9.72 0 0 1 18 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 0 0 3 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 0 0 9.002-5.998Z"
-          />
-        </svg>
-      </div>
-    </label>
-  </article>
-</section>
+<label class="theme-switch">
+  <input type="checkbox" [checked]="isDark" (click)="onChange(true)">
+  <div class="slider">
+    <div class="icon-container">
+      <svg class="sun" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+        <circle cx="12" cy="12" r="5"></circle>
+        <line x1="12" y1="1" x2="12" y2="3"></line>
+        <line x1="12" y1="21" x2="12" y2="23"></line>
+        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+        <line x1="1" y1="12" x2="3" y2="12"></line>
+        <line x1="21" y1="12" x2="23" y2="12"></line>
+        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+      </svg>
+      <svg class="moon" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M19.5 14.5A9.5 9.5 0 1 1 9.5 2.5a9.5 9.5 0 0 0 10 12z"></path>
+      </svg>
+    </div>
+  </div>
+</label>
