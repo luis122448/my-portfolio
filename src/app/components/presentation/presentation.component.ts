@@ -10,10 +10,10 @@ import { StackTechComponent } from '../stack-tech/stack-tech.component';
 })
 export class PresentationComponent {
   downloadCV() {
-    const rute = './assets/pdf/SF-LuisAntonioCalvoQuispe.pdf';
+    const rute = './assets/pdf/CV-LuisAntonioCalvoQuispe.pdf';
     const link = document.createElement('a');
     link.href = rute;
-    link.download = 'SF-LuisAntonioCalvoQuispe.pdf';
+    link.download = 'CV-LuisAntonioCalvoQuispe.pdf';
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
