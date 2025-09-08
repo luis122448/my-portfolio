@@ -1,5 +1,5 @@
 #!/bin/bash
-# Description: Build and deploy application Docker image to Docker Hub, with automatic versioning and Git tagging.
+# Description: Build and deploy application sudo Docker image to sudo Docker Hub, with automatic versioning and Git tagging.
 
 # --- Configuration ---
 DOCKER_USERNAME="luis122448"
@@ -14,9 +14,9 @@ error_exit() {
 
 # --- Pre-checks ---
 git rev-parse --is-inside-work-tree > /dev/null 2>&1 || error_exit "Not inside a Git repository."
-docker info > /dev/null 2>&1 || error_exit "Docker is not running or user lacks permissions."
-docker info | grep "Username: $DOCKER_USERNAME" > /dev/null || \
-    error_exit "Not logged in to Docker Hub as $DOCKER_USERNAME. Please run 'docker login' manually."
+sudo docker info > /dev/null 2>&1 || error_exit "sudo Docker is not running or user lacks permissions."
+sudo docker info | grep "Username: $DOCKER_USERNAME" > /dev/null || \
+    error_exit "Not logged in to sudo Docker Hub as $DOCKER_USERNAME. Please run 'sudo docker login' manually."
 
 # --- Dynamic Versioning ---
 if [ "$1" == "-v" ]; then
@@ -43,21 +43,22 @@ fi
 FULL_IMAGE_NAME="${DOCKER_USERNAME}/${IMAGE_NAME}:${IMAGE_TAG}"
 
 # --- Docker Buildx Setup ---
-docker buildx inspect mybuilder > /dev/null 2>&1 || docker buildx create --name mybuilder --bootstrap || \
+sudo docker buildx inspect mybuilder > /dev/null 2>&1 || sudo docker buildx create --name mybuilder --bootstrap || \
     error_exit "Failed to create Buildx builder."
-docker buildx use mybuilder || error_exit "Failed to use Buildx builder 'mybuilder'."
+sudo docker buildx use mybuilder || error_exit "Failed to use Buildx builder 'mybuilder'."
 
 # --- Build and Push Image ---
 echo "Building and pushing ${FULL_IMAGE_NAME} for linux/amd64 and linux/arm64..."
-docker buildx build \
+sudo docker buildx build \
   --platform linux/amd64,linux/arm64 \
   -t "${FULL_IMAGE_NAME}" \
+  -t "${DOCKER_USERNAME}/${IMAGE_NAME}:latest" \
   --push \
-  "${DOCKERFILE_PATH}" || error_exit "Failed to build and push Docker image."
+  "${DOCKERFILE_PATH}" || error_exit "Failed to build and push sudo Docker image."
 
 # --- Git Tagging ---
 echo "Tagging release ${IMAGE_TAG} in Git..."
 git tag -a "${IMAGE_TAG}" -m "Release ${IMAGE_TAG}" || error_exit "Failed to create Git tag."
 git push origin "${IMAGE_TAG}" || error_exit "Failed to push Git tag to remote."
 
-echo "Image ${FULL_IMAGE_NAME} successfully deployed to Docker Hub and tagged in Git!"
+echo "Image ${FULL_IMAGE_NAME} successfully deployed to sudo Docker Hub and tagged in Git!"

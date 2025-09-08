@@ -15,6 +15,6 @@ spec:
     spec:
       containers:
         - name: my-portfolio-container
-          image: lcalvo/my-portfolio:v1.0.0
+          image: luis122448/my-portfolio:latest
           ports:
             - containerPort: 4000
