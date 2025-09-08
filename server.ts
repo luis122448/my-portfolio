@@ -21,6 +21,15 @@ export function app(): express.Express {
 
   // Example Express Rest API endpoints
   // server.get('/api/**', (req, res) => { });
+  // Serve robots.txt and sitemap.xml
+  server.get('/robots.txt', (req, res) => {
+    res.sendFile(resolve(browserDistFolder, 'robots.txt'));
+  });
+
+  server.get('/sitemap.xml', (req, res) => {
+    res.sendFile(resolve(browserDistFolder, 'sitemap.xml'));
+  });
+
   // Serve static files from /browser
   server.get('**', express.static(browserDistFolder, {
     maxAge: '1y',

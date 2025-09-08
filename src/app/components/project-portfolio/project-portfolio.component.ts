@@ -11,23 +11,23 @@ import { CarouselComponent } from '../carousel/carousel.component';
 })
 export class ProjectPortfolioComponent {
   urlImagesSmartShell = [
-    '/assets/project/smart-shell/1.jpg',
-    '/assets/project/smart-shell/2.jpg',
-    '/assets/project/smart-shell/3.jpg',
-    '/assets/project/smart-shell/4.jpg',
-    '/assets/project/smart-shell/5.jpg'
+    '/assets/project/smart-shell/1.webp',
+    '/assets/project/smart-shell/2.webp',
+    '/assets/project/smart-shell/3.webp',
+    '/assets/project/smart-shell/4.webp',
+    '/assets/project/smart-shell/5.webp'
   ];
 
   urlImagesProLearnTracker = [
-    '/assets/project/pro-learn-tracker/6.jpg',
-    '/assets/project/pro-learn-tracker/7.jpg'
+    '/assets/project/pro-learn-tracker/6.webp',
+    '/assets/project/pro-learn-tracker/7.webp'
   ];
 
   urlSqlReportDashboard = [
-    '/assets/project/sql-report-dashboard/8.jpg',
+    '/assets/project/sql-report-dashboard/8.webp',
   ];
 
   urlMigrateToOracle = [
-    '/assets/project/migrate-to-oracle/9.jpg',
+    '/assets/project/migrate-to-oracle/9.webp',
   ];
 }
