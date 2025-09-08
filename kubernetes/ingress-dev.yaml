@@ -36,4 +36,4 @@ spec:
   - hosts:
     - lcalvo.dev
     - www.lcalvo.dev
-    secretName: external-secret
+    secretName: lcalvo-dev-aws-tls
